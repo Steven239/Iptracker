@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Screenshot
 
-![IPTracker](src\IPTrackerDesktop.jpg)
+![IPTracker](C:\SF.Code\My-Project\iptracker\src\IPTrackerDesktop.jpg)
 
 ### Links
 
