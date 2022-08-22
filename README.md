@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Screenshot
 
-![IPTracker](src\IPTrackerDesktop.jpg)
+See "Design" Folder
 
 ### Links
 
