@@ -1,70 +1,119 @@
-# Getting Started with Create React App
+# Frontend Mentor - IP address tracker solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my solution to the [IP address tracker challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### The challenge
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Users should be able to:
 
-### `npm test`
+- View the optimal layout for each page depending on their device's screen size. The project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+** This project is currently NOT optimized for mobile. **
 
-### `npm run build`
+- See hover states for all interactive elements on the page
+- See their own IP address on the map on the initial page load
+- Search for any IP addresses and see the key information and location
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Screenshot
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![IPTracker](src\IPTrackerDesktop.jpg)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Links
 
-### `npm run eject`
+- Solution URL: Coming Soon
+- Live Site URL: Coming Soon
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## My process
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Built with
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- [React](https://reactjs.org/) - JS library
+- [Styled Components](https://styled-components.com/) - For styles
+- [Ipapi](https://ipapi.co/)
+- [React Leaflet](https://react-leaflet.js.org/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### What I learned
 
-## Learn More
+This has easily become of my favorite projects because of how challenging it was. This project required a lot of
+critical thinking and a whole lot more research. Here's a list of things that I learned while working on this project
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Styling elements using Styled Components.
+- Using the useRef hook to update state without causing React to re-render. This was huge!!
+- Intergrate the React Leaflet in my project so that I can initialize the map
+- How to set a Background image
+- Using z-index to bring a div forward
+- Using the useMapEvents to set the map to the current longitude and latitude location provide in the API response.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To see how you can add code snippets, see below:
 
-### Code Splitting
+```js
+const prevData = useRef(mapData.ip);
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```js
+const StyledHeadline = styled.h1`
+  color: white;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 400px;
+`;
 
-### Analyzing the Bundle Size
+const StyledSearchBar = styled.div`
+  text-align: center;
+  width: 100%;
+  padding-bottom: 65px;
+`;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+const StyledInfoDiv = styled.div`
+  width: 80%;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+  position: absolute;
+  top: 100px;
+  right: 70px;
+  z-index: 2;
+`;
+```
 
-### Making a Progressive Web App
+### Continued development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Useful resources
 
-### Advanced Configuration
+- [Map Events for Leaflet](https://leafletjs.com/examples/quick-start/) - This is the document that I use to initialize the map
+- [React Leaflet](https://react-leaflet.js.org/) - I had to use this documentation since the map is being initialized
+  inside of a React App
+- [useRef](https://www.w3schools.com/react/react_useref.asp) - I read this to get a better understanding of the useRef hook
+- [Ipapi](https://ipapi.co/) - Free source for getting an API to find a location
+- [CORS Issues](https://www.youtube.com/watch?v=hxyp_LkKDdk&t=1296s) - I ran into an issue trying to hit the API. Initial it wouldn't allow me to hit the API because of a proxy issue. This YouTube video show how to fix this issue.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Author
 
-### Deployment
+Coming soon
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Acknowledgments
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+WAYYY to many to list.
